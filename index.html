@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="default">
+  <meta name="apple-mobile-web-app-title" content="小习惯">
+  <meta name="theme-color" content="#FFF8F6">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
+  <link rel="icon" href="assets/favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <title>小习惯</title>
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <div id="app">
+    <!-- Today Page -->
+    <div id="page-today" class="page active">
+      <div class="today-header">
+        <span id="today-date" class="today-date"></span>
+      </div>
+      <div id="today-grid" class="today-grid"></div>
+    </div>
+
+    <!-- Calendar Page -->
+    <div id="page-calendar" class="page">
+      <div id="calendar-root"></div>
+    </div>
+
+    <!-- Settings Page -->
+    <div id="page-settings" class="page">
+      <div id="settings-root"></div>
+    </div>
+
+    <!-- Activity Detail Bottom Sheet -->
+    <div id="detail-sheet" class="bottom-sheet-overlay" style="display:none">
+      <div class="bottom-sheet" id="detail-sheet-content">
+        <div class="sheet-handle"></div>
+        <div id="detail-sheet-body"></div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div id="toast" class="toast"></div>
+
+    <!-- Modal (for forms) -->
+    <div id="modal-overlay" class="modal-overlay" style="display:none">
+      <div class="modal" id="modal-content"></div>
+    </div>
+
+    <!-- Bottom Tab Bar -->
+    <nav class="bottom-nav">
+      <button class="nav-btn active" data-tab="today">
+        <span class="nav-icon">📋</span>
+        <span class="nav-label">今天</span>
+      </button>
+      <button class="nav-btn" data-tab="calendar">
+        <span class="nav-icon">📅</span>
+        <span class="nav-label">日历</span>
+      </button>
+      <button class="nav-btn" data-tab="settings">
+        <span class="nav-icon">⚙️</span>
+        <span class="nav-label">我的</span>
+      </button>
+    </nav>
+  </div>
+
+  <script src="js/utils.js"></script>
+  <script src="js/db.js"></script>
+  <script src="js/router.js"></script>
+  <script src="js/components/confetti.js"></script>
+  <script src="js/components/toast.js"></script>
+  <script src="js/components/modal.js"></script>
+  <script src="js/components/bottom-sheet.js"></script>
+  <script src="js/components/habit-card.js"></script>
+  <script src="js/components/mini-calendar.js"></script>
+  <script src="js/components/emoji-picker.js"></script>
+  <script src="js/pages/today.js"></script>
+  <script src="js/pages/calendar.js"></script>
+  <script src="js/pages/settings.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+/* === CSS Custom Properties === */
+:root, [data-theme="light"] {
+  --bg: #FFF8F6;
+  --bg-card: #FFFFFF;
+  --text-primary: #4A4A4A;
+  --text-secondary: #A0A0A0;
+  --text-muted: #C0C0C0;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.04);
+  --shadow: 0 2px 12px rgba(0,0,0,0.06);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.10);
+  --radius-sm: 10px;
+  --radius: 16px;
+  --radius-lg: 20px;
+  --nav-bg: rgba(255,255,255,0.92);
+  --backdrop: rgba(0,0,0,0.3);
+  --overlay: rgba(255,255,255,0.7);
+  --divider: #F0EDEB;
+
+  /* Category palette — 8 macaron colors */
+  --cat-1: #FFAAA5;
+  --cat-2: #A8D8EA;
+  --cat-3: #AA96DA;
+  --cat-4: #FCBAD3;
+  --cat-5: #A8E6CF;
+  --cat-6: #FFD3B6;
+  --cat-7: #D4A5A5;
+  --cat-8: #C7CEEA;
+
+  --safe-top: env(safe-area-inset-top, 0px);
+  --safe-bottom: env(safe-area-inset-bottom, 0px);
+}
+
+[data-theme="dark"] {
+  --bg: #1A1A2E;
+  --bg-card: #252540;
+  --text-primary: #E0E0E0;
+  --text-secondary: #888;
+  --text-muted: #555;
+  --shadow-sm: 0 1px 3px rgba(0,0,0,0.2);
+  --shadow: 0 2px 12px rgba(0,0,0,0.25);
+  --shadow-lg: 0 8px 24px rgba(0,0,0,0.35);
+  --nav-bg: rgba(37,37,64,0.95);
+  --backdrop: rgba(0,0,0,0.5);
+  --overlay: rgba(26,26,46,0.7);
+  --divider: #333;
+}
