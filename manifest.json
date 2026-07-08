@@ -1,13 +1,13 @@
 {
-  "name": "小习惯",
+  "name": "小习惯 - 打卡追踪器",
   "short_name": "小习惯",
-  "start_url": "/habit-tracker/",
-  "scope": "/habit-tracker/",
+  "start_url": ".",
   "display": "standalone",
-  "orientation": "portrait",
-  "theme_color": "#FFF8F6",
+  "orientation": "portrait-primary",
+  "theme_color": "#D4A5A5",
   "background_color": "#FFF8F6",
-  "description": "打卡习惯追踪器 — 记录每一天的小坚持",
+  "description": "打卡习惯追踪器 - 记录每一天的小坚持",
+  "lang": "zh-CN",
   "icons": [
     { "src": "assets/icon-192.png", "sizes": "192x192", "type": "image/png" },
     { "src": "assets/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
